@@ -1,0 +1,146 @@
+/*Variablen Definierung*/
+:root {
+  --beige: #f1ffe7;
+  --green: #709255;
+  --grey: #353535;
+  --orange: #ff9505;
+  --blue: #2d82b7;
+  --brown: #0f2417;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  xborder: 1px solid grey;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: var(--beige);
+}
+
+header {
+  height: 3em;
+  position: relative;
+  top: 0;
+  background-color: var(--grey);
+  color: var(--beige);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5em;
+}
+
+/*Flexbox Struktur
+1st Flex-Container*/
+.top-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+/*2nd Flex-Container*/
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  height: 10em;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 0.3em;
+  box-shadow: 1px 0.4em 0.4em 5px var(--grey);
+  color: var(--grey);
+  font-weight: 600;
+}
+
+/*Antwort Karten*/
+.card + .answer {
+  background-color: var(--green);
+  color: var(--beige);
+  height: 6em;
+}
+
+/*Card Inhalt
+Bookmark für Quizfragen-Karten*/
+.bookmark {
+  width: 2em;
+  height: 3em;
+  background-color: antiquewhite;
+  position: absolute;
+  right: 0.5em;
+  top: -1em;
+  box-shadow: 0.1em 0.1em 5px var(--grey);
+}
+
+.card__header {
+  position: absolute;
+  top: 0.3em;
+  left: 1.5em;
+}
+
+h2 {
+  font-size: 0.8em;
+}
+
+p.question {
+  padding: 0.5em 1em;
+  text-align: center;
+}
+
+button {
+  border: none;
+}
+
+button.answer {
+  padding: 0.5em 1.2em;
+  background-color: var(--beige);
+  box-shadow: 2px 2px 3px var(--grey);
+  border-radius: 1px;
+  font-weight: 700;
+}
+
+.tag {
+  position: absolute;
+  bottom: 0.5em;
+  left: 1em;
+  font-size: 0.7em;
+}
+
+.tag span {
+  border: 1px solid var(--grey);
+  border-radius: 3px;
+  background-color: lightgray;
+  padding: 0.2em;
+}
+
+/*Footer und Navigation (Bottom)*/
+footer {
+  position: sticky;
+  margin-top: 1.5em;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  background-color: var(--grey);
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+nav {
+  width: 100%;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--beige);
+}
