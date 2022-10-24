@@ -58,6 +58,10 @@ header {
   font-weight: 600;
 }
 
+.card:last-of-type {
+  margin-bottom: 4.5em;
+}
+
 /*Antwort Karten*/
 .card + .answer {
   background-color: var(--green);
@@ -121,7 +125,6 @@ button.answer {
 /*Footer und Navigation (Bottom)*/
 footer {
   position: fixed;
-  margin-top: 1.5em;
   bottom: 0;
   width: 100%;
   height: 3em;
