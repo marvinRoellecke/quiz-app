@@ -38,7 +38,7 @@ header {
 }
 
 /*Flexbox Struktur
-1st Flex-Container*/
+  1st Flex-Container*/
 .top-container {
   display: flex;
   flex-direction: column;
@@ -75,7 +75,7 @@ header {
 }
 
 /*Card Inhalt
-Bookmark für Quizfragen-Karten*/
+  Bookmark für Quizfragen-Karten*/
 .bookmark {
   background: none;
   position: absolute;
@@ -147,11 +147,6 @@ ul {
   display: flex;
   justify-content: space-around;
   list-style: none;
-}
-
-nav a {
-  text-decoration: none;
-  color: var(--beige);
 }
 
 .icon {
