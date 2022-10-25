@@ -37,6 +37,10 @@ header {
   z-index: 10;
 }
 
+h1 {
+  font-size: 1.3em;
+}
+
 /*Flexbox Struktur
 1st Flex-Container*/
 .top-container {
@@ -69,9 +73,9 @@ header {
 
 /*Antwort Karten*/
 .card + .answer {
-  background-color: var(--green);
-  color: var(--beige);
+  border: 3px solid var(--green);
   height: 6em;
+  color: var(--green);
 }
 
 /*Card Inhalt
