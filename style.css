@@ -16,12 +16,12 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /*border: 1px solid grey;*/
+  xborder: 1px solid grey;
 }
 
 body {
   font-family: Helvetica, Arial, sans-serif;
-  background-color: var(--color__background);
+  background-color: var(--beige);
 }
 
 header {
@@ -60,11 +60,10 @@ h1 {
   height: 10em;
   justify-content: space-evenly;
   align-items: center;
-  /*border-radius: 0.3em;*/
-  /*box-shadow: 1px 0.4em 0.4em 5px var(--grey);*/
+  border-radius: 0.3em;
+  box-shadow: 1px 0.4em 0.4em 5px var(--grey);
   color: var(--grey);
   font-weight: 600;
-  background-color: var(--color__card);
 }
 
 .card:last-of-type {
@@ -81,14 +80,13 @@ h1 {
 /*Card Inhalt
 Bookmark für Quizfragen-Karten*/
 .bookmark {
-  background: none;
+  width: 2em;
+  height: 3em;
+  background-color: antiquewhite;
   position: absolute;
   right: 0.5em;
   top: -1em;
-}
-
-.icon__bookmark {
-  width: 3em;
+  box-shadow: 0.1em 0.1em 5px var(--grey);
 }
 
 .card__header {
@@ -113,7 +111,7 @@ button {
 button.answer {
   padding: 0.5em 1.2em;
   background-color: var(--beige);
-  box-shadow: 1px 1px 1px var(--grey);
+  box-shadow: 2px 2px 3px var(--grey);
   border-radius: 1px;
   font-weight: 700;
 }
@@ -143,14 +141,14 @@ footer {
   background-color: var(--grey);
 }
 
-nav {
-  width: 100%;
-}
-
 ul {
   display: flex;
   justify-content: space-around;
   list-style: none;
+}
+
+.icon {
+  width: 1.5em;
 }
 
 .icon {
