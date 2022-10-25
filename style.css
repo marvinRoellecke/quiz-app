@@ -77,13 +77,14 @@ header {
 /*Card Inhalt
 Bookmark für Quizfragen-Karten*/
 .bookmark {
-  width: 2em;
-  height: 3em;
-  background-color: var(--color__bookmark);
+  background: none;
   position: absolute;
   right: 0.5em;
   top: -1em;
-  box-shadow: 0.1em 0.1em 5px var(--grey);
+}
+
+.icon__bookmark {
+  width: 3em;
 }
 
 .card__header {
