@@ -153,11 +153,6 @@ ul {
   list-style: none;
 }
 
-nav a {
-  text-decoration: none;
-  color: var(--beige);
-}
-
 .icon {
   width: 1.5em;
 }
