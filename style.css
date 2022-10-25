@@ -22,7 +22,7 @@ body {
 
 header {
   height: 3em;
-  position: relative;
+  position: sticky;
   top: 0;
   background-color: var(--grey);
   color: var(--beige);
@@ -30,6 +30,7 @@ header {
   align-items: center;
   justify-content: center;
   margin-bottom: 1.5em;
+  z-index: 10;
 }
 
 /*Flexbox Struktur
@@ -55,6 +56,10 @@ header {
   box-shadow: 1px 0.4em 0.4em 5px var(--grey);
   color: var(--grey);
   font-weight: 600;
+}
+
+.card:last-of-type {
+  margin-bottom: 4.5em;
 }
 
 /*Antwort Karten*/
@@ -119,10 +124,8 @@ button.answer {
 
 /*Footer und Navigation (Bottom)*/
 footer {
-  position: sticky;
-  margin-top: 1.5em;
+  position: fixed;
   bottom: 0;
-  left: 0;
   width: 100%;
   height: 3em;
   display: flex;
