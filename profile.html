@@ -5,33 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header>
       <h1>Quiz App - Profile</h1>
     </header>
-    <main class="top-container">
-      <section class="card question" aria-describedby="Question">
-        <button type="button" class="bookmark">
-          <img src="images/icon_bookmark-black.svg" class="icon__bookmark" />
+    <main class="main__flex-container">
+      <section class="quiz-card question" aria-describedby="Question">
+        <button type="button" class="button__bookmark">
+          <img
+            src="images/icon_bookmark-black.svg"
+            class="button__bookmark-icon"
+          />
         </button>
-        <span class="card__header"><h2>#1</h2></span>
-        <p class="question">
+        <span class="quiz-card__title"><h2>#1</h2></span>
+        <p class="p__question">
           Mit welcher Geschwingigkeit ploppt ein Sektkorken aus der Flasche?
         </p>
-        <button type="button" class="answer">Show Answer</button>
-        <aside class="tag">
+        <button type="button" class="button__answer">Show Answer</button>
+        <aside class="quiz-card__tag">
           <span>#html</span>
           <span>#flexbox</span>
           <span>#css</span>
         </aside>
       </section>
 
-      <section class="card answer">
-        <span class="card__header"><h2></h2></span>
-        <p class="question">40 km/h</p>
-        <button type="button" class="answer hide">Hide Answer</button>
+      <section class="quiz-card answer">
+        <p class="p__question">40 km/h</p>
+        <button type="button" class="button__answer hide">Hide Answer</button>
       </section>
     </main>
 

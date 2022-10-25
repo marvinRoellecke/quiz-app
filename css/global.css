@@ -1,0 +1,37 @@
+/*Variablen Definierung*/
+:root {
+  --beige: #f1ffe7;
+  --green: #709255;
+  --grey: #353535;
+  --orange: #ff9505;
+  --blue: #2d82b7;
+  --brown: #0f2417;
+  --color__bookmark: antiquewhite;
+  --color__background: #fbdbc1;
+  --color__font: #1d5962;
+  --color__card: #b0ddc2;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /*border: 1px solid grey;*/
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: var(--color__background);
+}
+
+h2 {
+  font-size: 0.8em;
+}
+
+button {
+  border: none;
+}
+
+.hidden {
+  display: none;
+}
