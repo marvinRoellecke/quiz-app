@@ -24,6 +24,10 @@ body {
   background-color: var(--color__background);
 }
 
+.body--dark {
+  background-color: var(--grey);
+}
+
 h2 {
   font-size: 0.8em;
 }

@@ -6,34 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/index.js" defer></script>
   </head>
-  <body>
+  <body data-js="body">
     <header>
-      <h1>Quiz App - Profile</h1>
+      <h1>Quiz App</h1>
     </header>
     <main class="main__flex-container">
-      <section class="quiz-card question" aria-describedby="Question">
-        <button type="button" class="button__bookmark">
-          <img
-            src="images/icon_bookmark-black.svg"
-            class="button__bookmark-icon"
-          />
-        </button>
-        <span class="quiz-card__title"><h2>#1</h2></span>
-        <p class="p__question">
-          Mit welcher Geschwingigkeit ploppt ein Sektkorken aus der Flasche?
-        </p>
-        <button type="button" class="button__answer">Show Answer</button>
-        <aside class="quiz-card__tag">
-          <span>#html</span>
-          <span>#flexbox</span>
-          <span>#css</span>
-        </aside>
-      </section>
-
       <section class="quiz-card answer">
-        <p class="p__question">40 km/h</p>
-        <button type="button" class="button__answer hide">Hide Answer</button>
+        <img src="/images/profile.JPG" width="100px" class="img__profile" />
+        <p class="p__question">Hedgehog</p>
+        <button
+          type="button"
+          class="button__answer hide"
+          data-js="button__dark-mode"
+        >
+          Dark Mode
+        </button>
       </section>
     </main>
 
