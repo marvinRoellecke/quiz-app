@@ -24,7 +24,7 @@ body {
   background-color: var(--color__background);
 }
 
-.body__dark {
+.body--dark {
   background-color: var(--grey);
 }
 
