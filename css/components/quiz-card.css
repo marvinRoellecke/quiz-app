@@ -18,12 +18,11 @@
   justify-content: space-evenly;
   align-items: center;
   /*border-radius: 0.3em;*/
-  box-shadow: 1px 0 3px var(--grey);*/
+  /*box-shadow: 1px 0 3px var(--grey);*/
   color: var(--grey);
   font-weight: 600;
   /*background-color: var(--color__card);*/
   border: 1px solid var(--grey);
-
 }
 
 .quiz-card:last-of-type {

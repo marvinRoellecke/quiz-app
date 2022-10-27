@@ -1,4 +1,4 @@
-console.clear();
+//show / hide answers
 
 const answer = document.querySelector('[data-js="p__answer"]');
 const btnAnswer = document.querySelector('[data-js="btnAnswer"]');
