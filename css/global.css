@@ -8,6 +8,7 @@
   --brown: #0f2417;
   --color__bookmark: antiquewhite;
   --color__background: #fbdbc1;
+  --color__background2: #d8eee1;
   --color__font: #1d5962;
   --color__card: #b0ddc2;
 }
@@ -21,7 +22,7 @@
 
 body {
   font-family: Helvetica, Arial, sans-serif;
-  background-color: var(--color__background);
+  background-color: var(--color__background2);
 }
 
 .body--dark {
@@ -36,6 +37,6 @@ button {
   border: none;
 }
 
-.hidden {
+.show-answer {
   display: none;
 }
