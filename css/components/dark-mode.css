@@ -1,0 +1,4 @@
+.quiz-card--dark {
+  border-color: var(--color__background2);
+  color: var(--color__background2);
+}
