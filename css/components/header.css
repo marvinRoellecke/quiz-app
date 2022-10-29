@@ -11,3 +11,13 @@ header {
   border-bottom: 1px solid var(--grey);
   background: inherit;
 }
+
+.progress-bar {
+  position: fixed;
+  top: 3em;
+  left: 0;
+  height: 1px;
+  width: 0;
+  background-color: var(--grey);
+  transition: width 0.05s ease;
+}

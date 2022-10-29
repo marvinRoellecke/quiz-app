@@ -3,6 +3,7 @@
 const bodyElement = document.querySelector('[data-js="body"]');
 const headerElement = document.querySelector('[data-js="header"]');
 const footerElement = document.querySelector('[data-js="footer"]');
+const progressBarDark = document.querySelector('[data-js="progress-bar"]');
 const toggleBtn = document.querySelector('[data-js="button__dark-mode"]');
 const quizCard1 = document.querySelector('[data-js="quizCard1"]');
 const quizCard2 = document.querySelector('[data-js="quizCard2"]');
@@ -26,6 +27,7 @@ const enableDarkMode = () => {
   bodyElement.classList.add("body--dark");
   headerElement.classList.add("header--dark");
   footerElement.classList.add("footer--dark");
+  progressBarDark.classList.add("progress-bar--dark");
   quizCard1.classList.add("quiz-card--dark");
   quizCard2.classList.add("quiz-card--dark");
   quizCard3.classList.add("quiz-card--dark");
@@ -49,6 +51,7 @@ const disableDarkMode = () => {
   bodyElement.classList.remove("body--dark");
   headerElement.classList.remove("header--dark");
   footerElement.classList.remove("footer--dark");
+  progressBarDark.classList.remove("progress-bar--dark");
   quizCard1.classList.remove("quiz-card--dark");
   quizCard2.classList.remove("quiz-card--dark");
   quizCard3.classList.remove("quiz-card--dark");
