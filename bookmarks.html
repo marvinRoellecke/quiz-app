@@ -6,15 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <script src="js/index.js" defer></script>
+    <script src="js/bookmarks.js" defer></script>
     <script src="js/profile.js" defer></script>
   </head>
   <body data-js="body">
-    <header>
+    <header data-js="header">
       <h1>Quiz App</h1>
     </header>
     <main class="main__flex-container">
-      <section class="quiz-card question" aria-describedby="Question">
+      <section
+        class="quiz-card question"
+        data-js="quizCardB1"
+        aria-describedby="Question"
+      >
         <button type="button" class="button__bookmark">
           <img
             src="images/icon_bookmark-black-filled.svg"
@@ -25,8 +29,10 @@
         <p class="p__question">
           Mit welcher Geschwingigkeit ploppt ein Sektkorken aus der Flasche?
         </p>
-        <p class="p__answer">40 km/h</p>
-        <button type="button" class="button__answer">Show Answer</button>
+        <p class="p__answer show-answer" data-js="p__answerB1">40 km/h</p>
+        <button type="button" class="button__answer" data-js="btnAnswerB1">
+          Show Answer
+        </button>
         <aside class="quiz-card__tag">
           <span>#html</span>
           <span>#flexbox</span>
@@ -34,7 +40,11 @@
         </aside>
       </section>
 
-      <section class="quiz-card question" aria-describedby="Question">
+      <section
+        class="quiz-card question"
+        data-js="quizCardB4"
+        aria-describedby="Question"
+      >
         <button type="button" class="button__bookmark">
           <img
             src="images/icon_bookmark-black-filled.svg"
@@ -43,8 +53,10 @@
         </button>
         <span class="quiz-card__title"><h2>#4</h2></span>
         <p class="p__question">Wie viele Monde hat der Jupiter?</p>
-        <p class="p__answer">63</p>
-        <button type="button" class="button__answer">Show Answer</button>
+        <p class="p__answer show-answer" data-js="p__answerB4">63</p>
+        <button type="button" class="button__answer" data-js="btnAnswerB4">
+          Show Answer
+        </button>
         <aside class="quiz-card__tag">
           <span>#html</span>
           <span>#flexbox</span>
@@ -52,7 +64,11 @@
         </aside>
       </section>
 
-      <section class="quiz-card question" aria-describedby="Question">
+      <section
+        class="quiz-card question"
+        data-js="quizCardB5"
+        aria-describedby="Question"
+      >
         <button type="button" class="button__bookmark">
           <img
             src="images/icon_bookmark-black-filled.svg"
@@ -63,8 +79,10 @@
         <p class="p__question">
           In welcher deutschen Stadt wird mehr Bier gebraut als in München?
         </p>
-        <p class="p__answer">Dortmund</p>
-        <button type="button" class="button__answer">Show Answer</button>
+        <p class="p__answer show-answer" data-js="p__answerB5">Dortmund</p>
+        <button type="button" class="button__answer" data-js="btnAnswerB5">
+          Show Answer
+        </button>
         <aside class="quiz-card__tag">
           <span>#html</span>
           <span>#flexbox</span>
@@ -72,7 +90,11 @@
         </aside>
       </section>
 
-      <section class="quiz-card question" aria-describedby="Question">
+      <section
+        class="quiz-card question"
+        data-js="quizCardB7"
+        aria-describedby="Question"
+      >
         <button type="button" class="button__bookmark">
           <img
             src="images/icon_bookmark-black-filled.svg"
@@ -84,8 +106,10 @@
           Wie viele Sätze spricht Arnold Schwarzenegger im ersten Teil von
           "Terminator"?
         </p>
-        <p class="p__answer">17</p>
-        <button type="button" class="button__answer">Show Answer</button>
+        <p class="p__answer show-answer" data-js="p__answerB7">17</p>
+        <button type="button" class="button__answer" data-js="btnAnswerB7">
+          Show Answer
+        </button>
         <aside class="quiz-card__tag">
           <span>#html</span>
           <span>#flexbox</span>
@@ -93,7 +117,11 @@
         </aside>
       </section>
 
-      <section class="quiz-card question" aria-describedby="Question">
+      <section
+        class="quiz-card question"
+        data-js="quizCardB10"
+        aria-describedby="Question"
+      >
         <button type="button" class="button__bookmark">
           <img
             src="images/icon_bookmark-black-filled.svg"
@@ -104,17 +132,29 @@
         <p class="p__question">
           Wie wird Ötzi im angelsächsischen Raum genannt?
         </p>
-        <p class="p__answer">Frozen Fritz</p>
-        <button type="button" class="button__answer">Show Answer</button>
+        <p class="p__answer show-answer" data-js="p__answerB10">Frozen Fritz</p>
+        <button type="button" class="button__answer" data-js="btnAnswerB10">
+          Show Answer
+        </button>
         <aside class="quiz-card__tag">
           <span>#html</span>
           <span>#flexbox</span>
           <span>#css</span>
         </aside>
       </section>
+      <div class="show-answer" data-js="quizCard1">111</div>
+      <div class="show-answer" data-js="quizCard2">111</div>
+      <div class="show-answer" data-js="quizCard3">111</div>
+      <div class="show-answer" data-js="quizCard4">111</div>
+      <div class="show-answer" data-js="quizCard5">111</div>
+      <div class="show-answer" data-js="quizCard6">111</div>
+      <div class="show-answer" data-js="quizCard7">111</div>
+      <div class="show-answer" data-js="quizCard8">111</div>
+      <div class="show-answer" data-js="quizCard9">111</div>
+      <div class="show-answer" data-js="quizCard10">111</div>
     </main>
 
-    <footer>
+    <footer data-js="footer">
       <nav>
         <ul>
           <li>
