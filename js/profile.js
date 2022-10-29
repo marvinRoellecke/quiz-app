@@ -39,7 +39,6 @@ const enableDarkMode = () => {
   quizCardB10.classList.add("quiz-card--dark");
   profileCard.classList.add("quiz-card--dark");
   localStorage.setItem("dark-mode", "enabled");
-  console.log("Clicked dark mode button");
 };
 
 const disableDarkMode = () => {
@@ -61,7 +60,6 @@ const disableDarkMode = () => {
   quizCardB10.classList.remove("quiz-card--dark");
   profileCard.classList.remove("quiz-card--dark");
   localStorage.setItem("dark-mode", "disabled");
-  console.log("Clicked dark mode button");
 };
 
 if (darkMode === "enabled") {
