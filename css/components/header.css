@@ -2,11 +2,12 @@ header {
   height: 3em;
   position: sticky;
   top: 0;
-  background-color: var(--grey);
-  color: var(--beige);
+  color: var(--grey);
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 1.5em;
   z-index: 10;
+  border-bottom: 1px solid var(--grey);
+  background: inherit;
 }

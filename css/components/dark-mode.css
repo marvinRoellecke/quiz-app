@@ -2,3 +2,12 @@
   border-color: var(--color__background2);
   color: var(--color__background2);
 }
+
+.header--dark {
+  border-bottom: 1px solid var(--color__background2);
+  color: var(--color__background2);
+}
+
+.footer--dark {
+  border-top: 1px solid var(--color__background2);
+}
