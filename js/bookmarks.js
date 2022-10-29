@@ -28,3 +28,17 @@ const btnAnswerB10 = document.querySelector('[data-js="btnAnswerB10"]');
 btnAnswerB10.addEventListener("click", () => {
   answerB10.classList.toggle("show-answer");
 });
+
+const progressBar = document.querySelector('[data-js="progress-bar"]');
+
+document.addEventListener("scroll", () => {
+  const currentPos = window.scrollY;
+
+  const heightWin = window.innerHeight;
+
+  const heightWeb = document.body.clientHeight;
+
+  const percentPos = Math.round(((currentPos + heightWin) / heightWeb) * 100);
+
+  progressBar.style.width = percentPos + "%";
+});
