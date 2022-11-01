@@ -1,4 +1,41 @@
 //show / hide answers
+const bodyElement = document.querySelector('[data-js="body"]');
+const headerElement = document.querySelector('[data-js="header"]');
+const footerElement = document.querySelector('[data-js="footer"]');
+const progressBarDark = document.querySelector('[data-js="progress-bar"]');
+let darkMode = localStorage.getItem("dark-mode");
+
+const quizCard1 = document.querySelector('[data-js="quizCard1"]');
+const quizCard2 = document.querySelector('[data-js="quizCard2"]');
+const quizCard3 = document.querySelector('[data-js="quizCard3"]');
+const quizCard4 = document.querySelector('[data-js="quizCard4"]');
+const quizCard5 = document.querySelector('[data-js="quizCard5"]');
+const quizCard6 = document.querySelector('[data-js="quizCard6"]');
+const quizCard7 = document.querySelector('[data-js="quizCard7"]');
+const quizCard8 = document.querySelector('[data-js="quizCard8"]');
+const quizCard9 = document.querySelector('[data-js="quizCard9"]');
+const quizCard10 = document.querySelector('[data-js="quizCard10"]');
+
+const enableDarkMode = () => {
+  bodyElement.classList.add("body--dark");
+  headerElement.classList.add("header--dark");
+  footerElement.classList.add("footer--dark");
+  progressBarDark.classList.add("progress-bar--dark");
+  quizCard1.classList.add("quiz-card--dark");
+  quizCard2.classList.add("quiz-card--dark");
+  quizCard3.classList.add("quiz-card--dark");
+  quizCard4.classList.add("quiz-card--dark");
+  quizCard5.classList.add("quiz-card--dark");
+  quizCard6.classList.add("quiz-card--dark");
+  quizCard7.classList.add("quiz-card--dark");
+  quizCard8.classList.add("quiz-card--dark");
+  quizCard9.classList.add("quiz-card--dark");
+  quizCard10.classList.add("quiz-card--dark");
+};
+
+if (darkMode === "enabled") {
+  enableDarkMode();
+}
 
 const answer = document.querySelector('[data-js="p__answer"]');
 const btnAnswer = document.querySelector('[data-js="btnAnswer"]');
