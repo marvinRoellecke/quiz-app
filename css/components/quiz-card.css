@@ -46,7 +46,18 @@
 }
 
 .button__bookmark-icon {
-  width: 3em;
+  fill: none;
+  stroke: var(--color__background2);
+}
+
+.button__bookmark-icon:hover {
+  fill: var(--color__background2);
+  stroke: var(--color__background2);
+}
+
+.button__bookmark-icon--current-page {
+  fill: var(--color__background2);
+  stroke: var(--color__background2);
 }
 
 .quiz-card__title {
