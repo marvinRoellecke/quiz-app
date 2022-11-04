@@ -152,3 +152,17 @@ inputAnswer.addEventListener("input", (event) => {
 
   charCountAnswer.textContent = `${lettersLeft} characters left`;
 });
+
+const progressBar = document.querySelector('[data-js="progress-bar"]');
+
+document.addEventListener("scroll", () => {
+  const currentPos = window.scrollY;
+
+  const heightWin = window.innerHeight;
+
+  const heightWeb = document.body.clientHeight;
+
+  const percentPos = Math.round((currentPos / (heightWeb - heightWin)) * 100);
+
+  progressBar.style.width = percentPos + "%";
+});
