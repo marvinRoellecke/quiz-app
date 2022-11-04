@@ -42,6 +42,11 @@ const btnAnswer = document.querySelector('[data-js="btnAnswer"]');
 
 btnAnswer.addEventListener("click", () => {
   answer.classList.toggle("show-answer");
+  if (answer.classList.contains("show-answer")) {
+    btnAnswer.textContent = "Show Answer";
+  } else {
+    btnAnswer.textContent = "Hide Answer";
+  }
 });
 
 const answer2 = document.querySelector('[data-js="p__answer2"]');
@@ -119,4 +124,15 @@ document.addEventListener("scroll", () => {
   const percentPos = Math.round(((currentPos + heightWin) / heightWeb) * 100);
 
   progressBar.style.width = percentPos + "%";
+});
+
+const quizCardBookmark = document.querySelector(
+  '[data-js="quiz-card__bookmark"]'
+);
+const btnBookmark = document.querySelector(
+  '[data-js="quiz-card__button-bookmark"]'
+);
+
+btnBookmark.addEventListener("click", () => {
+  quizCardBookmark.classList.toggle("quiz-card__bookmark--checked");
 });
