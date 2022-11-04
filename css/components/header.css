@@ -9,7 +9,7 @@ header {
   margin-bottom: 1.5em;
   z-index: 10;
   border-bottom: 1px solid var(--grey);
-  background-color: var(--color__background2);
+  background-color: inherit;
 }
 
 .progress-bar {
