@@ -5,7 +5,8 @@ const headerElement = document.querySelector('[data-js="header"]');
 const footerElement = document.querySelector('[data-js="footer"]');
 const progressBarDark = document.querySelector('[data-js="progress-bar"]');
 const toggleBtn = document.querySelector('[data-js="button__dark-mode"]');
-const profileCard = document.querySelector('[data-js="profileCard"]');
+const profileContent = document.querySelector('[data-js="profile__main"]');
+
 let darkMode = localStorage.getItem("dark-mode");
 
 const enableDarkMode = () => {
@@ -13,7 +14,7 @@ const enableDarkMode = () => {
   headerElement.classList.add("header--dark");
   footerElement.classList.add("footer--dark");
   progressBarDark.classList.add("progress-bar--dark");
-  profileCard.classList.add("quiz-card--dark");
+  profileContent.classList.add("quiz-card--dark");
   localStorage.setItem("dark-mode", "enabled");
 };
 
@@ -22,7 +23,7 @@ const disableDarkMode = () => {
   headerElement.classList.remove("header--dark");
   footerElement.classList.remove("footer--dark");
   progressBarDark.classList.remove("progress-bar--dark");
-  profileCard.classList.remove("quiz-card--dark");
+  profileContent.classList.remove("quiz-card--dark");
   localStorage.setItem("dark-mode", "disabled");
 };
 
