@@ -7,75 +7,40 @@
     <title>Quiz App</title>
     <link rel="stylesheet" href="css/styles.css" />
 
-    <script src="js/profile.js" defer></script>
+    <script src="js/form.js" defer></script>
   </head>
   <body data-js="body">
     <header data-js="header">
       <h1>Quiz App</h1>
     </header>
     <div class="progress-bar" data-js="progress-bar"></div>
-    <main class="main__flex-container" data-js="profile__main">
-      <section class="profile">
-        <img src="/images/profile.JPG" width="100px" class="img__profile" />
-        <p class="p__profile">Hedgehog</p>
-        <aside>Did you know that the hedgehog is a real quizmaster?</aside>
-        <section>
-          <svg
-            fill="none"
-            height="24"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            width="24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <polygon points="12 2 2 7 12 12 22 7 12 2" />
-            <polyline points="2 17 12 22 22 17" />
-            <polyline points="2 12 12 17 22 12" />
-          </svg>
-          10
-          <svg
-            fill="none"
-            stroke="currentColor"
-            height="24"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            width="24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
-          </svg>
-          5
-        </section>
-        <section>
-          <svg
-            fill="none"
-            height="24"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            width="24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-            <circle cx="8.5" cy="7" r="4" />
-            <line x1="20" x2="20" y1="8" y2="14" />
-            <line x1="23" x2="17" y1="11" y2="11" />
-          </svg>
-        </section>
-        <button
-          type="button"
-          class="button__answer hide button_dark-mode--grid"
-          data-js="button__dark-mode"
-        >
-          Dark Mode
-        </button>
+    <main class="main__flex-container" data-js="new-cards">
+      <section>
+        <form data-js="form">
+          <fieldset>
+            <label for="question">your question:</label>
+            <textarea
+              rows="5"
+              name="question"
+              id="question"
+              maxlength="150"
+              data-js="inputQuestion"
+            ></textarea>
+            <output data-js="charCountQuestion"></output>
+            <label for="answer">your answer:</label>
+            <textarea
+              rows="3"
+              name="answer"
+              id="answer"
+              maxlength="150"
+              data-js="inputAnswer"
+            ></textarea>
+            <output data-js="charCountAnswer"></output>
+            <label for="Tag">tag:</label>
+            <input type="text" name="tag" id="tag" maxlength="10" />
+            <button type="submit">Submit</button>
+          </fieldset>
+        </form>
       </section>
     </main>
 
@@ -116,24 +81,6 @@
             </a>
           </li>
           <li>
-            <a href="form.html">
-              <svg
-                class="button__bookmark-icon"
-                height="24"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                width="24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect height="18" rx="2" ry="2" width="18" x="3" y="3" />
-                <line x1="12" x2="12" y1="8" y2="16" />
-                <line x1="8" x2="16" y1="12" y2="12" />
-              </svg>
-            </a>
-          </li>
-          <li>
             <svg
               class="button__bookmark-icon--current-page"
               height="24"
@@ -144,9 +91,27 @@
               width="24"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-              <circle cx="12" cy="7" r="4" />
+              <rect height="18" rx="2" ry="2" width="18" x="3" y="3" />
+              <line x1="12" x2="12" y1="8" y2="16" />
+              <line x1="8" x2="16" y1="12" y2="12" />
             </svg>
+          </li>
+          <li>
+            <a href="profile.html">
+              <svg
+                class="button__bookmark-icon"
+                height="24"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+              </svg>
+            </a>
           </li>
         </ul>
       </nav>
