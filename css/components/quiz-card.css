@@ -45,6 +45,16 @@
   top: -1em;
 }
 
+.quiz-card__bookmark {
+  fill: var(--color__background2);
+  stroke: var(--grey);
+  stroke-width: 1;
+}
+
+.quiz-card__bookmark--checked {
+  fill: var(--grey);
+}
+
 .button__bookmark-icon {
   fill: none;
   stroke: var(--color__background2);
