@@ -121,7 +121,7 @@ document.addEventListener("scroll", () => {
 
   const heightWeb = document.body.clientHeight;
 
-  const percentPos = Math.round(((currentPos + heightWin) / heightWeb) * 100);
+  const percentPos = Math.round((currentPos / (heightWeb - heightWin)) * 100);
 
   progressBar.style.width = percentPos + "%";
 });
